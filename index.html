@@ -110,8 +110,13 @@
                 <p>
                     Of course, no amount of words will help you get a good night's rest. We believe in a resource-focused approach—we give you the tools to solve your sleeping problem, and you decide how to use them.
                 </p>
-                <a href="tools.html" class="cta-btn">GET TOOLS</a>
+                <a href="tools.html" class="cta-btn" id="getTools">GET TOOLS</a>
             </div>
+            <script type="text/javascript">
+              $('#getTools').click(function() {
+                fbq('track', 'AddToCart', {currency: "USD", value: 30.00});
+              });
+            </script>
         </div>
 
         <!-- The Modal Popup -->
@@ -147,11 +152,11 @@
                         fbq('track', 'AddToCart', {currency: "USD", value: 30.00});
                       });
                     </script>
-<!--                     <script type="text/javascript">
+                    <script type="text/javascript">
                       $('#emailCTA').click(function() {
                         fbq('track', 'AddToCart', {currency: "USD", value: 30.00});
                       });
-                    </script> -->
+                    </script>
                 
                 </span>
                 <br>
