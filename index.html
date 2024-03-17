@@ -113,14 +113,18 @@
                 </p>
                 <a href="tools.html" class="cta-btn" id="getTools" target="_blank">GET TOOLS</a>
                 <script type="text/javascript">
-                  $('#getTools').click(function() {
-                    fbq('track', 'Purchase', {currency: "USD", value: 30.00});
+                    
+                document.addEventListener('DOMContentLoaded', function() {
+                    // Get the element by its ID
+                    const getTools = document.getElementById('getTools');
+                
+                    // Add an event listener for the 'click' event
+                    getTools.addEventListener('click', function() {
+                      fbq('track', 'Purchase', {value: 10.00, currency: "USD"});
+                    });
                   });
                 </script>
-            </div>
-            </script>
-
-            
+            </div>           
 
         </div>
 
