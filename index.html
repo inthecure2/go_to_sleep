@@ -142,12 +142,15 @@
                 <span class="footer-email" id="emailCTA"><a href="mailto:example@example.com">example@example.com</a></span>
                 <br>
                 <span class="footer-email"><img src="whats-app-icon.png" alt="Chat with us in WhatsApp" style="width:100px; height:auto; cursor:pointer;" onclick="parent.open('https://wa.me/37126031911')"></span>
-                  $('#emailCTA').click(function() {
+                <script>
+                    $('#emailCTA').click(function() {
                     fbq('track', 'AddToCart', {currency: "USD", value: 30.00});
                   });
                   $('#emailCTA').click(function() {
                     fbq('track', 'AddToCart', {currency: "USD", value: 30.00});
                   });
+                </script>
+                      
                 
 
             </div>
